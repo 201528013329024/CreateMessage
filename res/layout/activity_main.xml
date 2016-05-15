@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1A7593"
+    android:orientation="vertical"
+    tools:context="com.xhg.createmessage.MainActivity" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SMS"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:background="#1A7193"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:text="号码:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入或查找联系人"
+            android:inputType="phone"
+            android:singleLine="false"
+            android:textColor="#FFFFFF" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="30sp"
+            android:layout_height="30dp"
+            android:src="@drawable/search" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:background="#1A7193"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:text="功能:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioSend"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10sp"
+                android:text="发送短信"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioReceive"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="接收短信"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A7193"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="5sp"
+            android:text="短信内容:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout16"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/border"
+            android:gravity="top"
+            android:hint="请输入短信内容"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout14"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A7193"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/sendMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="发  送  / 接  收"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
